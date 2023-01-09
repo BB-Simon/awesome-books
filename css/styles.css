@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, h1, h2, h3 {
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+main {
+  margin-top: 140px;
+}
+
+.section {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.list-item {
+  width: 100%;
+  padding: 8px 12px;
+  border-bottom: 1px solid #000;
+}
+
+.list-item > h3,
+.list-item > h4,
+.list-item > button {
+  margin: 8px 0;
+}
