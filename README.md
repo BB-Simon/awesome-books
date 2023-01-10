@@ -39,16 +39,24 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- HTML
-- CSS
-- JS
-- Git/GitHub
-- node.js
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://github.com/BB-Simon/">yml for linters</a></li>
+    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://www.w3schools.com/js/default.asp">JS</a></li>
+    <li><a href="https://github.com">GIT/Github</a></li>
+    <li><a href="https://nodejs.org/en/">NodeJS</a></li>
+  </ul>
+</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-- **Dynamic Content**
+- **[Dynamic Book List]**
+- **[Add Book Form to the List]**
+- **[Remove Book From the List]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
