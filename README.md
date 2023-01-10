@@ -1,33 +1,7 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
+  <h3><b>Awesome Books</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -57,9 +31,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Concert Planner] <a name="about-project"></a>
+# 📖 [Awesome Books] <a name="about-project"></a>
 
-**Library of Books**
+**Awesome Books**
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -82,10 +56,10 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](comming soon)
 
 ## Loom Video <a name="loom"></a>
-- [Video Link]()
+- [Video Link](comming soon)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,7 +115,7 @@ git clone https://github.com/BB-Simon/awesome-books.git
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/BB-Simon/awesome-books/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +131,7 @@ If you like this project, you are welcomed to star and fork it. You can also sha
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for their original design.
+I would like to thank Microverse for their idea of awesome book project and fidelity wireframes.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
