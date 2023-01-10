@@ -1,9 +1,12 @@
 const addBookForm = document.getElementById('add-book');
 const bookListContainer = document.getElementById('book-list');
-let books = [];
+let books = JSON.parse(localStorage.getItem('books')) || [];
+
+
 
 function addBookToTheList() {
   bookListContainer.innerHTML = '';
+  localStorage.setItem('books', JSON.stringify(books)); 
   books.forEach((book) => {
     const li = document.createElement('li');
     li.classList.add('list-item');
