@@ -15,23 +15,12 @@ ul li {
   list-style: none;
 }
 
-/* import fonts */
-
-/* Robaga Rounded font */
-@font-face {
-  font-family: 'Robaga Rounded';
-  src: url("../fonts/robaga_rounded/Robaga_Rounded_Regular.otf") format('TrueType');
-  font-weight: normal;
-}
-
 /* Global styles
 ------------------------------------ */
 :root {
   /* Default font size */
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
-
-  /* font family */
-  --primary-ff: 'Robaga Rounded', 'Arial Black', 'Arial Bold', sans-serif;
 }
 
 body {
