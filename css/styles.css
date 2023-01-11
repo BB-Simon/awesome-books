@@ -74,8 +74,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 4px solid #000;
   margin-block-end: 2rem;
+}
+
+.add-border {
+  border: 3px solid #000;
 }
 
 .list-item {

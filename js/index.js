@@ -16,16 +16,17 @@ class BookList {
   }
 
   drawBooksToTheDom() {
-    this.bookListContainer.innerHTML = '';
+    if(this.books.length  > 0 ) {
+      this.bookListContainer.classList.add('add-border')
+      this.bookListContainer.innerHTML = '';
     this.books.forEach((book) => {
       const li = document.createElement('li');
       li.classList.add('list-item');
       const html = `
-        <h3>${book.title}</h3>
-        <h4>${book.author}</h4>
+        <h3>"${book.title}" by ${book.author} </h3>  
         <button class='remove-book-btn' data-id=${book.id}>Remove</button>
         `;
-
+       
       li.innerHTML = html;
       this.bookListContainer.appendChild(li);
       const removeBtns = document.querySelectorAll('.remove-book-btn');
@@ -36,6 +37,10 @@ class BookList {
         });
       });
     });
+    } else {
+      this.bookListContainer.innerHTML = 'No book added yet'
+    }
+    
   }
 
   removeBookFromTheDom(btn, id) {
@@ -43,6 +48,9 @@ class BookList {
     root.parentNode?.removeChild(root);
     this.books = this.books.filter((book) => book.id !== id);
     this.saveToLG();
+    if(this.books.length === 0) {
+      this.bookListContainer.classList.remove('add-border') 
+    }
   }
 }
 
