@@ -14,6 +14,7 @@ h3 {
 ul li {
   list-style: none;
 }
+
 /* import fonts */
 
 /* Robaga Rounded font */
@@ -49,17 +50,12 @@ body {
   padding: 1rem;
 }
 
-/* .container > * {
-  max-width: 100%;
+.divider {
+  width: 200px;
+  height: 4px;
+  background-color: #000;
+  margin: 30px auto;
 }
-
-.container > :first-child:not(main) {
-  margin-block-start: 0;
-}
-
-.container > :last-child:not(main) {
-  margin-block-end: 0;
-} */
 
 /* book collection section styles
 ------------------------------------ */
