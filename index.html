@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome Books</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <main>
-    <section class="section">
-      <h1>Awesome Books</h1>
-      <ul id="book-list" class="list-wrapper">
-        <!-- Dynamic book list comes here -->
-      </ul>
-    </section>
-    <section class="section">
-      <form id="add-book" class="add-book-form">
-        <input type="text" name="title" id="title" placeholder="Title">
-        <br>
-        <br> 
-        <input type="text" name="author" id="author" placeholder="Author">
-        <br>
-        <br>
-        <input type="submit" value="Add">
-      </form>
-    </section>
-  </main>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="book-container" class="container">
+        <h1 class="page-title">All awesome books</h1>
+         <ul id="book-list" class="list-container">
+        
+      </ul> 
+      </section>
+      <div class="divider"></div>
+      <section class="add-book">
+        <h1 class="page-title">Add a new book</h1>
+        <form id="add-book" class="add-book-form">
+          <input type="text" name="title" id="title" placeholder="Title" />
+          <br />
+          <br />
+          <input type="text" name="author" id="author" placeholder="Author" />
+          <br />
+          <br />
+          <input type="submit" value="Add" />
+        </form>
+      </section>
+    </main>
 
-  <script src="/js/index.js"></script>
-</body>
+    <script src="/js/index.js"></script>
+  </body>
 </html>
