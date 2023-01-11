@@ -45,12 +45,11 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   margin-inline: auto;
   padding: 1rem;
 }
 
-.container > * {
+/* .container > * {
   max-width: 100%;
 }
 
@@ -60,7 +59,7 @@ body {
 
 .container > :last-child:not(main) {
   margin-block-end: 0;
-}
+} */
 
 /* book collection section styles
 ------------------------------------ */
@@ -71,7 +70,7 @@ body {
   margin-block-end: 1rem;
 }
 
-.books {
+.list-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -79,30 +78,30 @@ body {
   margin-block-end: 2rem;
 }
 
-.book {
+.list-item {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.books .book:nth-child(odd) {
+.list-container .list-item:nth-child(odd) {
   background-color: #ddd;
 }
 
 /* remove padding, margin and border from all elements in book */
-.book * {
+.list-item * {
   padding: 1rem;
   border: none;
 }
 
-.book__empty {
+.list-item__empty {
   text-align: center;
   padding: 1rem;
   color: #f00;
 }
 
-.book__remove-btn {
+.remove-book-btn {
   border: 4px solid #000;
   box-shadow: 2px 2px 0 #000;
   padding: 0.5em 1em;
@@ -110,14 +109,14 @@ body {
   background-color: #fff;
 }
 
-.book__remove-btn:hover,
-.book__remove-btn:focus {
+.remove-book-btn:hover,
+.remove-book-btn:focus {
   background-color: #000;
   color: #fff;
   box-shadow: none;
 }
 
-.book__remove-btn:active {
+.remove-book-btn:active {
   background-color: #fff;
   color: #000;
   box-shadow: none;
@@ -125,16 +124,9 @@ body {
 
 /* Add Book section styles
 ------------------------------------ */
-.add__book {
+.add-book {
   max-inline-size: 400px;
   margin-inline: auto;
-}
-
-.add__book-title {
-  text-align: center;
-  font-size: 30px;
-  line-height: 1.5;
-  margin-block-end: 1rem;
 }
 
 .add-book-form {
