@@ -4,13 +4,15 @@
   box-sizing: border-box;
 }
 
-#nav-bar {
-  border: 6px solid black;
+#nav-bar,
+#footer {
+  border: 3px solid black;
   border-radius: 7px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 20px;
+  padding: 4px 14px;
   height: 40px;
 }
 
@@ -44,37 +46,54 @@ h3 {
   list-style-type: none;
 }
 
-#nav-bar nav ul li a {
-  padding: 10px;
-  border-right-width: 3.5px;
-  border-right-color: black;
-  border-right-style: solid;
+#nav-bar nav ul li {
+  margin: 4px 0;
+  padding: 0 12px
+}
+
+#nav-bar nav ul li:nth-child(2) {
+  border-left: 3px solid #000000;
+  border-right: 3px solid #000000;
 }
 
 /* Contact Section */
 #contact {
-  margin: 0 auto;
-  width: 40%;
-  display: none;
+  width: 100%;
+  min-height: 80vh;
+  padding: 20px;
+  /* display: none; */
+}
+
+#contact-wrapper {
+  margin: 80px 200px;
 }
 
 #contact #contact-wrapper h1 {
+  font-size: 44px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
-#contact #contact-wrapper .contact-text p {
-  text-align: left;
+.contact-text {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 ul li {
   list-style: none;
 }
 
-#contact #contact-wrapper #contact-ul li {
-  margin: 0 auto;
+#contact-ul {
+  display: inline-block;
+  margin-left: 40px;
 }
 
-#contact #contact-wrapper #contact-ul li p {
+#contact-ul li {
+  padding: 4px 0;
+  list-style: circle;
+}
+
+#contact-ul li p {
   width: 100%;
   text-align: left;
 }
@@ -96,18 +115,20 @@ body {
 }
 
 .container {
+  min-height: 80vh;
   position: relative;
   display: flex;
   flex-direction: column;
   margin-inline: auto;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .divider {
   width: 200px;
-  height: 4px;
+  height: 7px;
   background-color: #000;
   margin: 30px auto;
+  border-radius: 7px;
 }
 
 /* book collection section styles
@@ -128,6 +149,7 @@ body {
 
 .add-border {
   border: 3px solid #000;
+  border-radius: 7px;
 }
 
 .list-item {
@@ -177,16 +199,22 @@ body {
 /* Add Book section styles
 ------------------------------------ */
 .add-book {
-  max-inline-size: 400px;
-  margin-inline: auto;
+  width: 100%;
+  min-height: 80vh;
+  /* max-inline-size: 400px;
+  margin-inline: auto; */
+  padding: 50px 20px;
+  
+  
 }
 
 .add-book-form {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1rem;
 }
 
 .add-book-form > * {
@@ -196,7 +224,8 @@ body {
 .add-book-form input[type='text'] {
   padding: 0.5rem;
   font-size: 1.2rem;
-  border: 4px solid #000;
+  border: 3px solid #000;
+  border-radius: 7px;
 }
 
 .add-book-form > input[type='submit'] {
