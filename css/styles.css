@@ -24,6 +24,11 @@
   margin-left: 15px;
 }
 
+.nav-item:hover {
+ color:green;
+ cursor: pointer;
+}
+
 #nav-list,
 #nav-add-new,
 #nav-contact {
