@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
+#nav-bar {
+  border: 6px solid black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+  height: 40px;
+}
+
+#logo {
+  text-decoration: none;
+}
+
+#nav-bar #logo {
+  margin-left: 15px;
+}
+
+#nav-list,
+#nav-add-new,
+#nav-contact {
+  text-decoration: none;
+}
+
 ul,
 h1,
 h2,
@@ -11,8 +35,48 @@ h3 {
   margin: 0;
 }
 
+#nav-bar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 10px;
+  margin-right: 15px;
+  list-style-type: none;
+}
+
+#nav-bar nav ul li a {
+  padding: 10px;
+  border-right-width: 3.5px;
+  border-right-color: black;
+  border-right-style: solid;
+}
+
+/* Contact Section */
+#contact {
+  margin: 0 auto;
+  width: 40%;
+  display: none;
+}
+
+#contact #contact-wrapper h1 {
+  margin-bottom: 50px;
+}
+
+#contact #contact-wrapper .contact-text p {
+  text-align: left;
+}
+
 ul li {
   list-style: none;
+}
+
+#contact #contact-wrapper #contact-ul li {
+  margin: 0 auto;
+}
+
+#contact #contact-wrapper #contact-ul li p {
+  width: 100%;
+  text-align: left;
 }
 
 /* Global styles

@@ -17,10 +17,21 @@
       rel="stylesheet">
       
   </head>
+  <header id="nav-bar">
+    <a id="logo" href="#">Awesome Books</a>
+    <nav>
+        <ul>
+            <li><a id="nav-list" href="#">List</a></li>
+            <li><a id="nav-add-new" href="#">Add new</a></li>
+            <li><a id="nav-contact" href="">Contact</a></li>
+
+        </ul>
+    </nav>
+</header>
   <body>
     <main>
       <section id="book-container" class="container">
-        <h1 class="page-title">All awesome books</h1>
+       <!-- <h1 class="page-title">All awesome books</h1>-->
          <ul id="book-list" class="list-container">
         
       </ul> 
@@ -38,6 +49,24 @@
           <input type="submit" value="Add" />
         </form>
       </section>
+      <section id="contact">
+        <div id="contact-wrapper">
+            <h1>Contact Information</h1>
+        <p class="contact-text">Do you have any questions or you just want to say "Hello"? </p>
+        <p class="contact-text">You can reach out to us!</p>
+        <ul id="contact-ul">
+            <li>
+                <p> E-mail: awesomebooks@mail.com</p>
+            </li>
+            <li>
+                <p> Phone Number: 0123456789</p>
+            </li>
+            <li>
+                <p> Adress: Egypty, Cairo</p>
+            </li>
+        </ul>
+    </div>
+    </section>
     </main>
 
     <script src="/js/index.js"></script>

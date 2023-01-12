@@ -19,6 +19,7 @@ class BookList {
     const p = document.createElement('p');
     p.style.textAlign = 'center';
     p.innerText = 'No book added yet';
+    p.style.color = 'red';
     this.bookListContainer.append(p);
   }
 
