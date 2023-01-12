@@ -1,8 +1,23 @@
-class BookList {
+class AwesomeBooksColletions {
   constructor() {
     this.books = JSON.parse(localStorage.getItem('books')) || [];
     this.bookListContainer = document.getElementById('book-list');
+    this.navItems = document.querySelectorAll('.nav-item');
+    this.sections = document.querySelectorAll('.sections');
     this.drawBooksToTheDom();
+    this.navItems.forEach((item, index) => {
+      item.addEventListener('click', () => this.handleClick(index));
+    });
+  }
+
+  handleClick(navIndex) {
+    this.sections.forEach((section, index) => {
+      if (index === navIndex) {
+        section.style.display = 'block';
+      } else {
+        section.style.display = 'none';
+      }
+    });
   }
 
   add(book) {
@@ -60,7 +75,7 @@ class BookList {
   }
 }
 
-const book = new BookList();
+const book = new AwesomeBooksColletions();
 const addBookForm = document.getElementById('add-book');
 
 function handleSubmit(e) {

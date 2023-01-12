@@ -61,7 +61,7 @@ h3 {
   width: 100%;
   min-height: 80vh;
   padding: 20px;
-  /* display: none; */
+  display: none;
 }
 
 #contact-wrapper {
@@ -201,11 +201,8 @@ body {
 .add-book {
   width: 100%;
   min-height: 80vh;
-  /* max-inline-size: 400px;
-  margin-inline: auto; */
   padding: 50px 20px;
-  
-  
+  display: none;
 }
 
 .add-book-form {
