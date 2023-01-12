@@ -2,12 +2,16 @@ class AwesomeBooksColletions {
   constructor() {
     this.books = JSON.parse(localStorage.getItem('books')) || [];
     this.bookListContainer = document.getElementById('book-list');
+    this.timeContainer = document.getElementById('time');
     this.navItems = document.querySelectorAll('.nav-item');
     this.sections = document.querySelectorAll('.sections');
     this.drawBooksToTheDom();
     this.navItems.forEach((item, index) => {
       item.addEventListener('click', () => this.handleClick(index));
     });
+    setInterval(() => {
+      this.timeContainer.innerText = `${new Date().toUTCString()}`;
+    }, 1000);
   }
 
   handleClick(navIndex) {
