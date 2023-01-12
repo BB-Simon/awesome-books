@@ -4,6 +4,37 @@
   box-sizing: border-box;
 }
 
+#nav-bar,
+#footer {
+  border: 3px solid black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+  padding: 4px 14px;
+  height: 40px;
+}
+
+#logo {
+  text-decoration: none;
+}
+
+#nav-bar #logo {
+  margin-left: 15px;
+}
+
+.nav-item:hover {
+  color: green;
+  cursor: pointer;
+}
+
+#nav-list,
+#nav-add-new,
+#nav-contact {
+  text-decoration: none;
+}
+
 ul,
 h1,
 h2,
@@ -15,23 +46,74 @@ ul li {
   list-style: none;
 }
 
-/* import fonts */
+#contact-ul li {
+  padding: 4px 0;
+  list-style: circle;
+}
 
-/* Robaga Rounded font */
-@font-face {
-  font-family: 'Robaga Rounded';
-  src: url("../fonts/robaga_rounded/Robaga_Rounded_Regular.otf") format('TrueType');
-  font-weight: normal;
+#nav-bar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 10px;
+  margin-right: 15px;
+  list-style-type: none;
+}
+
+#nav-bar nav ul li {
+  margin: 4px 0;
+  padding: 0 12px;
+}
+
+#nav-bar nav ul li:nth-child(2) {
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+}
+
+#time {
+  text-align: right;
+  padding: 0 24px;
+}
+
+/* Contact Section */
+#contact {
+  width: 100%;
+  min-height: 80vh;
+  padding: 20px;
+  display: none;
+}
+
+#contact-wrapper {
+  margin: 80px 200px;
+}
+
+#contact #contact-wrapper h1 {
+  font-size: 44px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#contact-ul {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+#contact-ul li p {
+  width: 100%;
+  text-align: left;
 }
 
 /* Global styles
 ------------------------------------ */
 :root {
   /* Default font size */
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
-
-  /* font family */
-  --primary-ff: 'Robaga Rounded', 'Arial Black', 'Arial Bold', sans-serif;
 }
 
 body {
@@ -43,18 +125,20 @@ body {
 }
 
 .container {
+  min-height: 80vh;
   position: relative;
   display: flex;
   flex-direction: column;
   margin-inline: auto;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .divider {
   width: 200px;
-  height: 4px;
+  height: 7px;
   background-color: #000;
   margin: 30px auto;
+  border-radius: 7px;
 }
 
 /* book collection section styles
@@ -75,6 +159,7 @@ body {
 
 .add-border {
   border: 3px solid #000;
+  border-radius: 7px;
 }
 
 .list-item {
@@ -124,16 +209,19 @@ body {
 /* Add Book section styles
 ------------------------------------ */
 .add-book {
-  max-inline-size: 400px;
-  margin-inline: auto;
+  width: 100%;
+  min-height: 80vh;
+  padding: 50px 20px;
+  display: none;
 }
 
 .add-book-form {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1rem;
 }
 
 .add-book-form > * {
@@ -143,7 +231,8 @@ body {
 .add-book-form input[type='text'] {
   padding: 0.5rem;
   font-size: 1.2rem;
-  border: 4px solid #000;
+  border: 3px solid #000;
+  border-radius: 7px;
 }
 
 .add-book-form > input[type='submit'] {
